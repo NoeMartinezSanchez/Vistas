@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario de registro de vehículos</title>
+    <!-- Agregamos los estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Registro de vehículos</h1>
+      <div class="border p-3">
+        <form class="row">
+          
+          <div class="container text-center">
+            <div class="row">
+              <div class="col">
+              <div class="col-6 col-sm-3">
+                <label for="delantera-der">Delantera izquierda</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="rueda-izq" id="rueda-izq-balata" value="balata/zapata">
+                  <label class="form-check-label" for="rueda-izq-balata">Balata/Zapata</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="rueda-der" id="rueda-izq-disco" value="disco/tambor">
+                  <label class="form-check-label" for="rueda-izq-disco">Disco/Tambor</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="rueda-der" id="rueda-izq-neumatico" value="neumatico">
+                  <label class="form-check-label" for="rueda-izq-neumatico">Neumático</label>
+                </div>
+              </div>
+              </div>
+              <div class="col-6 col-sm-3">
+                <div class="col">
+                <label for="delantera-der">Delantera derecha</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="rueda-der" id="rueda-der-balata" value="balata/zapata">
+                  <label class="form-check-label" for="rueda-der-balata">Balata/Zapata</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="rueda-der" id="rueda-der-disco" value="disco/tambor">
+                  <label class="form-check-label" for="rueda-der-disco">Disco/Tambor</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="rueda-der" id="rueda-der-neumatico" value="neumatico">
+                  <label class="form-check-label" for="rueda-der-neumatico">Neumático</label>
+                </div>
+              </div>
+              </div>
+          
+              <!-- Force next columns to break to new line -->
+              <div class="w-100"></div>
+              <div class="col">
+                <div class="col-6 col-sm-3">
+                  <label for="delantera-der">Trasera izquierda</label>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="rueda-izq" id="rueda-izq-balata" value="balata/zapata">
+                    <label class="form-check-label" for="rueda-izq-balata">Balata/Zapata</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="rueda-izq" id="rueda-izq-disco" value="disco/tambor">
+                    <label class="form-check-label" for="rueda-izq-disco">Disco/Tambor</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="rueda-izq" id="rueda-izq-neumatico" value="neumatico">
+                    <label class="form-check-label" for="rueda-izq-neumatico">Neumático</label>
+                  </div>
+                </div>
+                </div>
+                <div class="col-6 col-sm-3">
+                  <div class="col">
+                  <label for="delantera-der">Trasera derecha</label>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="rueda-der" id="rueda-der-balata" value="balata/zapata">
+                    <label class="form-check-label" for="rueda-der-balata">Balata/Zapata</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="rueda-der" id="rueda-der-disco" value="disco/tambor">
+                    <label class="form-check-label" for="rueda-der-disco">Disco/Tambor</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="rueda-der" id="rueda-der-neumatico" value="neumatico">
+                    <label class="form-check-label" for="rueda-der-neumatico">Neumático</label>
+                  </div>
+                </div>
+                </div>
+            </div>
+          </div>
+          <div class="form-group col-md-12">
+            <button type="submit" class="btn btn-primary">Guardar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Agregamos los scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

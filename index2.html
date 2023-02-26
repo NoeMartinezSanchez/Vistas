@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario de registro de vehículos</title>
+    <!-- Agregamos los estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Agregamos los estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ 
+    <!-- Agregamos la biblioteca jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <!-- Agregamos los archivos JavaScript de Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+
+  </head>
+  <body>
+    <div class="container">
+
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#formulario1">Registro de vehículos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#formulario2">Exteriores</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#formulario3">Cajuela</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#formulario4">Cofre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#formulario5">Inferior</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#formulario6">Sistema de frenos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#formulario7">Condición carroceria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#formulario8">Inicio de sesión</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#formulario9">Agregar usuario</a>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+
+
+        <!-- Primer formulario -->
+        <div class="tab-pane active" id="formulario1">
+          <h1>Registro de vehículos</h1>
+          <div class="border p-3">
+            <form class="row">
+                <div class="form-group col-md-6">
+                    <label for="nombre">Nombre del cliente:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="placa">Placa:</label>
+                    <input type="text" class="form-control" id="placa" name="placa">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" class="form-control" id="fecha" name="fecha">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="motor">Motor:</label>
+                    <input type="text" class="form-control" id="motor" name="motor">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="color">Color:</label>
+                    <input type="text" class="form-control" id="color" name="color">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="torre">Torre:</label>
+                    <input type="text" class="form-control" id="torre" name="torre">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="modelo">Modelo:</label>
+                    <input type="text" class="form-control" id="modelo" name="modelo">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="kilometros">Kilómetros por hora:</label>
+                    <input type="number" class="form-control" id="kilometros" name="kilometros">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="serie">Número de serie:</label>
+                    <input type="text" class="form-control" id="serie" name="serie">
+                  </div>
+                  <div class="form-group col-md-12">
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                  </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Segundo formulario -->
+        <div class="tab-pane" id="formulario2">
+          <h1>Exteriores</h1>
+          <div class="border p-3">
+            <form class="row">
+
+              <div class="form-group col-md-6">
+                <label>Tapones de rueda:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="tapones" id="tapones_si" value="si">
+                  <label class="form-check-label" for="tapones_si">Sí</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="tapones" id="tapones_no" value="no">
+                  <label class="form-check-label" for="tapones_no">No</label>
+                </div>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label>Gomas de limpiadores:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="gomas" id="gomas_si" value="si">
+                  <label class="form-check-label" for="gomas_si">Sí</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="gomas" id="gomas_no" value="no">
+                  <label class="form-check-label" for="gomas_no">No</label>
+                </div>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label>Antena:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="antena" id="antena_si" value="si">
+                  <label class="form-check-label" for="antena_si">Sí</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="antena" id="antena_no" value="no">
+                    <label class="form-check-label" for="gomas_no">No</label>
+                </div>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label>Tapon de gasolina:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="tapon" id="tapon_si" value="si">
+                  <label class="form-check-label" for="antena_si">Sí</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="tapon" id="tapon_no" value="no">
+                    <label class="form-check-label" for="gomas_no">No</label>
+                </div>
+              </div>
+              <div class="form-group col-md-12">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Tercer formulario -->
+        <div class="tab-pane" id="formulario3">
+          <h1>Cajuela</h1>
+          <div class="border p-3">
+            <form class="row">
+
+              <div class="form-group col-md-6">
+                <label>Herramienta:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="herramienta" id="herramienta_si" value="si">
+                  <label class="form-check-label" for="herramienta_si">Sí</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="herramienta" id="herramienta_no" value="no">
+                  <label class="form-check-label" for="herramienta_no">No</label>
+                </div>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label>Gato/Llave:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="gato" id="gato_si" value="si">
+                  <label class="form-check-label" for="gato_si">Sí</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="gato" id="gato_no" value="no">
+                  <label class="form-check-label" for="gato_no">No</label>
+                </div>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label>Reflejantes:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="reflejantes" id="reflejantes_si" value="si">
+                  <label class="form-check-label" for="reflejantes_si">Sí</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="reflejantes" id="reflejantes_no" value="no">
+                    <label class="form-check-label" for="reflejantes_no">No</label>
+                </div>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label>Cables:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="cables" id="cables_si" value="si">
+                  <label class="form-check-label" for="cables_si">Sí</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="cables" id="cables_no" value="no">
+                    <label class="form-check-label" for="cables_no">No</label>
+                </div>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label>Extintor:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="extintor" id="extintor_si" value="si">
+                  <label class="form-check-label" for="extintor_si">Sí</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="extintor" id="extintor_no" value="no">
+                    <label class="form-check-label" for="extintor_no">No</label>
+                </div>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label>Llanta refacción:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="llanta" id="llanta_si" value="si">
+                  <label class="form-check-label" for="llanta_si">Sí</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="llanta" id="llanta_no" value="no">
+                    <label class="form-check-label" for="llanta_no">No</label>
+                </div>
+              </div>
+              <div class="form-group col-md-12">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Cuarto formulario -->
+        <div class="tab-pane" id="formulario4">
+          <h1>Cofre</h1>
+          <div class="border p-3">
+            <form>
+              <h3>Inspección de fluidos</h3>
+              <fieldset>
+                <legend>Aceite motor</legend>
+                <label><input type="radio" name="aceite" value="correcto"> Nivel correcto</label>
+                <label><input type="radio" name="aceite" value="incorrecto"> Nivel incorrecto</label>
+                <label><input type="radio" name="aceite" value="fuga"> Fuga</label>
+              </fieldset>
+              <fieldset>
+                <legend>Líquido de frenos</legend>
+                <label><input type="radio" name="frenos" value="correcto"> Nivel correcto</label>
+                <label><input type="radio" name="frenos" value="incorrecto"> Nivel incorrecto</label>
+                <label><input type="radio" name="frenos" value="fuga"> Fuga</label>
+              </fieldset>
+              <fieldset>
+                <legend>Líquido limpiaparabrisas</legend>
+                <label><input type="radio" name="limpiaparabrisas" value="correcto"> Nivel correcto</label>
+                <label><input type="radio" name="limpiaparabrisas" value="incorrecto"> Nivel incorrecto</label>
+                <label><input type="radio" name="limpiaparabrisas" value="fuga"> Fuga</label>
+              </fieldset>
+              <fieldset>
+                <legend>Anticongelante</legend>
+                <label><input type="radio" name="anticongelante" value="correcto"> Nivel correcto</label>
+                <label><input type="radio" name="anticongelante" value="incorrecto"> Nivel incorrecto</label>
+                <label><input type="radio" name="anticongelante" value="fuga"> Fuga</label>
+              </fieldset>
+              <fieldset>
+                <legend>Líquido de dirección</legend>
+                <label><input type="radio" name="direccion" value="correcto"> Nivel correcto</label>
+                <label><input type="radio" name="direccion" value="incorrecto"> Nivel incorrecto</label>
+                <label><input type="radio" name="direccion" value="fuga"> Fuga</label>
+              </fieldset>
+              <div class="form-group col-md-12">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Quinto formulario -->
+        <div class="tab-pane" id="formulario5">
+          <h1>Inferior</h1>
+          <div class="border p-3">
+            <form>
+              <h3>Inferior</h3>
+              <fieldset>
+                <legend>Sistema de escape</legend>
+                <label><input type="radio" name="sistema_de_escape" value="bien"> Bien</label>
+                <label><input type="radio" name="sistema_de_escape" value="mal"> Mal</label>
+                <label><input type="radio" name="sistema_de_escape" value="fuga"> Fuga</label>
+              </fieldset>
+              <fieldset>
+                <legend>Amortiguadores</legend>
+                <label><input type="radio" name="amortiguadores" value="bien"> Bien</label>
+                <label><input type="radio" name="amortiguadores" value="mal"> Mal</label>
+                <label><input type="radio" name="amortiguadores" value="fuga"> Fuga</label>
+              </fieldset>
+              <fieldset>
+                <legend>Tuberias</legend>
+                <label><input type="radio" name="tuberias" value="bien"> Bien</label>
+                <label><input type="radio" name="tuberias" value="mal"> Mal</label>
+                <label><input type="radio" name="tuberias" value="fuga"> Fuga</label>
+              </fieldset>
+              <fieldset>
+                <legend>Transeje/Transmision</legend>
+                <label><input type="radio" name="transeje_transmision" value="bien"> Bien</label>
+                <label><input type="radio" name="transeje_transmision" value="mal"> Mal</label>
+                <label><input type="radio" name="transeje_transmision" value="fuga"> Fuga</label>
+              </fieldset>
+              <fieldset>
+                <legend>Sistema de dirección</legend>
+                <label><input type="radio" name="sistema_de_direccion" value="bien"> Bien</label>
+                <label><input type="radio" name="sistema_de_direccion" value="mal"> Mal</label>
+                <label><input type="radio" name="sistema_de_direccion" value="fuga"> Fuga</label>
+              </fieldset>
+              <fieldset>
+                <legend>Chasis sucio</legend>
+                <label><input type="radio" name="chasis_sucio" value="bien"> Bien</label>
+                <label><input type="radio" name="chasis_sucio" value="mal"> Mal</label>
+                <label><input type="radio" name="chasis_sucio" value="fuga"> Fuga</label>
+              </fieldset>
+              <fieldset>
+                <legend>Golpe especifico</legend>
+                <label><input type="radio" name="golpe_especifico" value="bien"> Bien</label>
+                <label><input type="radio" name="golpe_especifico" value="mal"> Mal</label>
+                <label><input type="radio" name="golpe_especifico" value="fuga"> Fuga</label>
+              </fieldset>
+              <div class="form-group col-md-12">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Sexto formulario -->
+        <div class="tab-pane" id="formulario6">
+          <h1>Sistema de frenos</h1>
+          <div class="border p-3">
+            <form class="row">
+          
+              <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                  <div class="col-6 col-sm-3">
+                    <label for="delantera-der">Delantera izquierda</label>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="rueda-izq" id="rueda-izq-balata" value="balata/zapata">
+                      <label class="form-check-label" for="rueda-izq-balata">Balata/Zapata</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="rueda-der" id="rueda-izq-disco" value="disco/tambor">
+                      <label class="form-check-label" for="rueda-izq-disco">Disco/Tambor</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="rueda-der" id="rueda-izq-neumatico" value="neumatico">
+                      <label class="form-check-label" for="rueda-izq-neumatico">Neumático</label>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                    <div class="col">
+                    <label for="delantera-der">Delantera derecha</label>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="rueda-der" id="rueda-der-balata" value="balata/zapata">
+                      <label class="form-check-label" for="rueda-der-balata">Balata/Zapata</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="rueda-der" id="rueda-der-disco" value="disco/tambor">
+                      <label class="form-check-label" for="rueda-der-disco">Disco/Tambor</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="rueda-der" id="rueda-der-neumatico" value="neumatico">
+                      <label class="form-check-label" for="rueda-der-neumatico">Neumático</label>
+                    </div>
+                  </div>
+                  </div>
+              
+                  <!-- Force next columns to break to new line -->
+                  <div class="w-100"></div>
+                  <div class="col">
+                    <div class="col-6 col-sm-3">
+                      <label for="delantera-der">Trasera izquierda</label>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="rueda-izq" id="rueda-izq-balata" value="balata/zapata">
+                        <label class="form-check-label" for="rueda-izq-balata">Balata/Zapata</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="rueda-izq" id="rueda-izq-disco" value="disco/tambor">
+                        <label class="form-check-label" for="rueda-izq-disco">Disco/Tambor</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="rueda-izq" id="rueda-izq-neumatico" value="neumatico">
+                        <label class="form-check-label" for="rueda-izq-neumatico">Neumático</label>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="col-6 col-sm-3">
+                      <div class="col">
+                      <label for="delantera-der">Trasera derecha</label>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="rueda-der" id="rueda-der-balata" value="balata/zapata">
+                        <label class="form-check-label" for="rueda-der-balata">Balata/Zapata</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="rueda-der" id="rueda-der-disco" value="disco/tambor">
+                        <label class="form-check-label" for="rueda-der-disco">Disco/Tambor</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="rueda-der" id="rueda-der-neumatico" value="neumatico">
+                        <label class="form-check-label" for="rueda-der-neumatico">Neumático</label>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+              </div>
+              <div class="form-group col-md-12">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+              </div>
+            </form>            
+          </div>
+        </div>
+
+        <!-- Septimo formulario -->
+        <div class="tab-pane" id="formulario7">
+          <h1>Condición carroceria</h1>
+          <div class="border p-3">
+            <form class="row">
+
+              <div class="form-group col-md-6">
+                <label>Costado derecho:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="tapones" id="tapones_si" value="si">
+                  <label class="form-check-label" for="tapones_si">Sí</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="tapones" id="tapones_no" value="no">
+                  <label class="form-check-label" for="tapones_no">No</label>
+                </div>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label>Parte delantera:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="gomas" id="gomas_si" value="si">
+                  <label class="form-check-label" for="gomas_si">Sí</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="gomas" id="gomas_no" value="no">
+                  <label class="form-check-label" for="gomas_no">No</label>
+                </div>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label>Interior, asientos, alfombra:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="antena" id="antena_si" value="si">
+                  <label class="form-check-label" for="antena_si">Sí</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="antena" id="antena_no" value="no">
+                    <label class="form-check-label" for="gomas_no">No</label>
+                </div>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label>Costado izquierdo:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="tapon" id="tapon_si" value="si">
+                  <label class="form-check-label" for="antena_si">Sí</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="tapon" id="tapon_no" value="no">
+                    <label class="form-check-label" for="gomas_no">No</label>
+                </div>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label>Parte trasera:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="tapon" id="tapon_si" value="si">
+                  <label class="form-check-label" for="antena_si">Sí</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="tapon" id="tapon_no" value="no">
+                    <label class="form-check-label" for="gomas_no">No</label>
+                </div>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label>Cristales y faros:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="tapon" id="tapon_si" value="si">
+                  <label class="form-check-label" for="antena_si">Sí</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="tapon" id="tapon_no" value="no">
+                    <label class="form-check-label" for="gomas_no">No</label>
+                </div>
+              </div>
+
+              <div class="form-group col-md-12">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Octavo formulario -->
+        <div class="tab-pane" id="formulario8">
+          <h1>Inicio de sesión</h1>
+          <div class="border p-3">
+            <form class="row">
+              <div class="form-group">
+                <label for="usuario">Usuario:</label>
+                <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Introduce tu nombre de usuario">
+              </div>
+              <div class="form-group">
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Introduce tu contraseña">
+              </div>
+              <button type="submit" class="btn btn-primary">Iniciar sesión</button>            
+            </form>
+          </div>
+        </div>
+
+        <!-- Noveno formulario -->
+        <div class="tab-pane" id="formulario9">
+          <h1>Agregar usuario</h1>
+          <div class="border p-3">
+            <form class="row">
+              <div class="form-group">
+                <label for="nombre">Ingresar nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Introduce el nombre del usuario">
+              </div>
+              <div class="form-group">
+                <label for="usuario">Ingresar usuario:</label>
+                <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Introduce el nombre de usuario">
+              </div>
+              <div class="form-group">
+                <label for="contraseña">Ingresar contraseña:</label>
+                <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Introduce la contraseña">
+              </div>
+              <div class="form-group">
+                <label for="rol">Rol:</label>
+                <select class="form-control" id="rol" name="rol">
+                  <option>Asesor</option>
+                  <option>Hojalatero</option>
+                  <option>Pintor</option>
+                  <option>Mecánico</option>
+                  <option>Ajustador</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Guardar</button>
+              <button type="button" class="btn btn-danger">Salir</button>
+         
+            </form>
+          </div>
+        </div>
+
+               
+
+      
+      </div>
+    </div>
+  </body>
+</html>
