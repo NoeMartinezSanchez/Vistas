@@ -1,0 +1,62 @@
+<%- include(cabecera) %>
+
+<body>
+    <div class="container">
+
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#formulario4">Cofre</a>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+
+
+        <!-- Cuarto formulario -->
+        <div class="tab-pane" id="formulario4">
+          <h1>Cofre</h1>
+          <div class="border p-3">
+            <form>
+              <h3>Inspección de fluidos</h3>
+              <fieldset>
+                <legend>Aceite motor</legend>
+                <label><input type="radio" name="aceite" value="correcto"> Nivel correcto</label>
+                <label><input type="radio" name="aceite" value="incorrecto"> Nivel incorrecto</label>
+                <label><input type="radio" name="aceite" value="fuga"> Fuga</label>
+              </fieldset>
+              <fieldset>
+                <legend>Líquido de frenos</legend>
+                <label><input type="radio" name="frenos" value="correcto"> Nivel correcto</label>
+                <label><input type="radio" name="frenos" value="incorrecto"> Nivel incorrecto</label>
+                <label><input type="radio" name="frenos" value="fuga"> Fuga</label>
+              </fieldset>
+              <fieldset>
+                <legend>Líquido limpiaparabrisas</legend>
+                <label><input type="radio" name="limpiaparabrisas" value="correcto"> Nivel correcto</label>
+                <label><input type="radio" name="limpiaparabrisas" value="incorrecto"> Nivel incorrecto</label>
+                <label><input type="radio" name="limpiaparabrisas" value="fuga"> Fuga</label>
+              </fieldset>
+              <fieldset>
+                <legend>Anticongelante</legend>
+                <label><input type="radio" name="anticongelante" value="correcto"> Nivel correcto</label>
+                <label><input type="radio" name="anticongelante" value="incorrecto"> Nivel incorrecto</label>
+                <label><input type="radio" name="anticongelante" value="fuga"> Fuga</label>
+              </fieldset>
+              <fieldset>
+                <legend>Líquido de dirección</legend>
+                <label><input type="radio" name="direccion" value="correcto"> Nivel correcto</label>
+                <label><input type="radio" name="direccion" value="incorrecto"> Nivel incorrecto</label>
+                <label><input type="radio" name="direccion" value="fuga"> Fuga</label>
+              </fieldset>
+              <div class="form-group col-md-12">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+       
+      </div>
+    </div>
+  </body>
+</html>
