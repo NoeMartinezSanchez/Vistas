@@ -1,0 +1,101 @@
+<%- include(cabecera) %>
+
+<body>
+    <div class="container">
+
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#formulario3">Cajuela</a>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+
+        <!-- Tercer formulario -->
+        <div class="tab-pane" id="formulario3">
+          <h1>Cajuela</h1>
+          <div class="border p-3">
+            <form class="row">
+
+              <div class="form-group col-md-6">
+                <label>Herramienta:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="herramienta" id="herramienta_si" value="si">
+                  <label class="form-check-label" for="herramienta_si">Sí</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="herramienta" id="herramienta_no" value="no">
+                  <label class="form-check-label" for="herramienta_no">No</label>
+                </div>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label>Gato/Llave:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="gato" id="gato_si" value="si">
+                  <label class="form-check-label" for="gato_si">Sí</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="gato" id="gato_no" value="no">
+                  <label class="form-check-label" for="gato_no">No</label>
+                </div>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label>Reflejantes:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="reflejantes" id="reflejantes_si" value="si">
+                  <label class="form-check-label" for="reflejantes_si">Sí</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="reflejantes" id="reflejantes_no" value="no">
+                    <label class="form-check-label" for="reflejantes_no">No</label>
+                </div>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label>Cables:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="cables" id="cables_si" value="si">
+                  <label class="form-check-label" for="cables_si">Sí</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="cables" id="cables_no" value="no">
+                    <label class="form-check-label" for="cables_no">No</label>
+                </div>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label>Extintor:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="extintor" id="extintor_si" value="si">
+                  <label class="form-check-label" for="extintor_si">Sí</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="extintor" id="extintor_no" value="no">
+                    <label class="form-check-label" for="extintor_no">No</label>
+                </div>
+              </div>
+
+              <div class="form-group col-md-6">
+                <label>Llanta refacción:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="llanta" id="llanta_si" value="si">
+                  <label class="form-check-label" for="llanta_si">Sí</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="llanta" id="llanta_no" value="no">
+                    <label class="form-check-label" for="llanta_no">No</label>
+                </div>
+              </div>
+              <div class="form-group col-md-12">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </body>
+</html>
